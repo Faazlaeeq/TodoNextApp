@@ -4,7 +4,7 @@ import { HiPencilAlt } from "react-icons/hi";
 
 const getTopics = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics");
+    const res = await fetch("{NEXT_PUBLIC_ROOT_URL}api/topics");
 
     if (!res.ok) {
       throw new Error("Failed to fetch topics");
